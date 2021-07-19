@@ -88,7 +88,14 @@ Once you are confident with using some basic blocks, and if you don't already ha
 
 There are only a few extra steps to use before following [Out of Tree Module Guide](https://wiki.gnuradio.org/index.php/OutOfTreeModules).
 
-TODO: write #exactsteps [Issue #9](https://github.com/cfriedt/gnuradio-for-mac-without-macports/issues/9)
+1. Source the grenv.sh script by running `source /Applications/GNURadio.app/Contents/MacOS/usr/bin/grenv.sh`
+
+2. Follow instructions at [Out of Tree Module Guide](https://wiki.gnuradio.org/index.php/OutOfTreeModules)
+
+3. When running `cmake`, you'll have to specify 
+```bash
+cmake -DCMAKE_INSTALL_PREFIX=/Applications/GNURadio.app/Contents/MacOS/usr/ ../
+```
 
 
 
